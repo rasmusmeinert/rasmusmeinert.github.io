@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: cornsilk;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+#sidenav {
+    min-width: 135px;
+    width: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+    #sidenav {
+       background-color: cornsilk;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       height: 100vh;
+       width: 100%;
+       transition: left 500ms cubic-bezier(0.33, 1, 0.68, 1);
+    }
+}
+
+.nav-open {
+    left: 0;
+}
+
+.nav-closed {
+    left: -100%;
+}
+
+#sidenav p {
+    padding: 6px 8px 6px 16px;
+    font-size:large;      
+    font-style: italic; 
+}
+
+#sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-style: italic;
+
+    color: black;
+    display: block;
+}
+
+#sidenav a:hover{
+    color:cornflowerblue;
+}
+
+hr {
+    width: 30%;
+}
+
+i {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+}
+
+a:hover{
+    color:cornflowerblue;
+}
+
+mark.blue{
+    color: cornflowerblue;
+    background: none;
+}
+
+.burger {
+    position: fixed;
+    left: 4px;
+    top: 4px;
+    z-index: 2;
+    background-color: cornsilk;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 6px;
+    margin-right: auto;
+}
+
+.burger:active  {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.burgerline {
+    width: 24px;
+    height: 3px;
+    background-color: #252525;
+}
+
+.burgerline.spacebottoms {
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 800px) {
+    .burger {
+        display: none;
+    }
+}

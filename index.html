@@ -5,77 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasmus Meinert - &#9815</title>
-    <style>
-       body {
-            background-color: cornsilk;
-            width: 100%;
-            text-align: center;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 150%;
-            font-size: 15px;
-        }
-
-        .sidenav{
-            width: 130px;
-            position:fixed;
-            font-family: Arial, Helvetica, sans-serif;
-            z-index: 1;
-            top: 20px;
-            left: 10px;
-            overflow-x: hidden;
-            padding: 8px,0;
-        }
-
-        .sidenav p {
-            padding: 6px 8px 6px 16px;
-            font-size:large;      
-            font-style: italic; 
-             }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-style: italic;
-
-            color: black;
-            display: block;
-        }
-
-        .sidenav a:hover{
-            color:cornflowerblue;
-        }
-
-        hr {
-            width: 30%;
-        }
-
-        i {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-            font-style: normal;
-        }
-
-
-
-        a:hover{
-            color:cornflowerblue;
-        }
-
-        mark.blue{
-            color: cornflowerblue;
-            background: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css"></link>
 </head>
 
 <body>
-
-    <div class = sidenav>
+    <nav id="sidenav">
         <p>
             Rasmus Meinert
         </p>
@@ -84,41 +18,50 @@
         <a href="prodcredits.html">&#9836 Production Credits</a>
         <a href="otherwork.html">&#9736 Other Work</a>
         <a href="contact.html">&#9743 Contact & Links</a>
-    </div>
+    </nav>
 
+    <main>
+        <button class="burger" onclick="toggleMenu()">
+            <div class="burgerline spacebottoms" ></div>
+            <div class="burgerline spacebottoms" ></div>
+            <div class="burgerline" ></div>
+        </button>
 
-    <p>
-        <hr>
-        <h3>  
-            &#9815 About &#9815
-        </h3>
-        <hr>
-        Hello, and welcome to my internet portfolio! <br/>
-        <br>
-        <img src="billede.png" alt="" style="width: 100px;height: 100px;">
-        <br>
-        <br>
-        My name is Rasmus Meinert <br/>
-        I'm a music producer and songwriter from Aarhus, Denmark.<br/>
-        On this website, you can find all the stuff i've created, and helped create troughout the years<br/>
-        You can listen to music &#9738 and even buy or download it if you want to &#9788 <br/>
-        You can also contact me &#9743 if you want to work with me, or need help with any of the stuff im good at &#9813 <br>
+        <p>
+            <hr>
+            <h3>  
+                &#9815 About &#9815
+            </h3>
+            <hr>
+            Hello, and welcome to my internet portfolio! <br/>
+            <br>
+            <img src="billede.png" alt="" style="width: 100px;height: 100px;">
+            <br>
+            <br>
+            My name is Rasmus Meinert <br/>
+            I'm a music producer and songwriter from Aarhus, Denmark.<br/>
+            On this website, you can find all the stuff i've created, and helped create troughout the years<br/>
+            You can listen to music &#9738 and even buy or download it if you want to &#9788 <br/>
+            You can also contact me &#9743 if you want to work with me, or need help with any of the stuff im good at &#9813 <br>
 
-        <br>
-        I've released a bunch of music under many different monikers, but its all collected here <br/> 
-        with my own stuff in the <mark class=blue>&#9738 Releases</mark> tab, and music i've produced for or with other people <br/>
-        in the <mark class=blue>&#9836 Production Credits</mark> tab. You can also check out music i have helped mix <br> 
-        or music i have composed for films in the <mark class=blue>&#9736 Other Work</mark> tab. If you want to reach out to me, trough email <br/> 
-        or social media, you can find my  contact information in the <mark class=blue>&#9743 Contact & Links</mark> tab <br>
-        In this tab you can also check out my soundcloud profiles for more music that has not been officially released. <br>
-        <br>
-        Thanks for Visiting! <br>
+            <br>
+            I've released a bunch of music under many different monikers, but its all collected here <br/> 
+            with my own stuff in the <mark class=blue>&#9738 Releases</mark> tab, and music i've produced for or with other people <br/>
+            in the <mark class=blue>&#9836 Production Credits</mark> tab. You can also check out music i have helped mix <br> 
+            or music i have composed for films in the <mark class=blue>&#9736 Other Work</mark> tab. If you want to reach out to me, trough email <br/> 
+            or social media, you can find my  contact information in the <mark class=blue>&#9743 Contact & Links</mark> tab <br>
+            In this tab you can also check out my soundcloud profiles for more music that has not been officially released. <br>
+            <br>
+            Thanks for Visiting! <br>
+            
+            <i>Rasmus Meinert</i><br>
+            <br>
+            <hr>
+            
+        </p>
+
+        <script src="./sidenav.js"></script>
+    </main>
         
-        <i>Rasmus Meinert</i><br>
-        <br>
-        <hr>
-        
-    </p>
 </body>
-
 </html>
