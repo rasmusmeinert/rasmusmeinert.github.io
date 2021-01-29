@@ -1,0 +1,79 @@
+body {
+    font-family: serif;
+    color: black;
+    background-color: ivory
+}
+
+#mc_embed_signup{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    line-height: 125%;
+
+}
+
+p {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+i {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    color: cornflowerblue;
+}
+.sidenav {
+    position:fixed;
+    min-width: 135px;
+    width: 135px;
+    overflow-x: hidden;
+    padding-left: 15%;
+    line-height: 125%;
+}
+
+.sidenav img {
+    padding: 6px 8px 6px 16px;
+
+}
+
+.sidenav b {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-style: italic;
+
+    color: black;
+    display: block;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-style: italic;
+
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-style: italic;
+
+    color:cornflowerblue;
+    display: block;
+}
